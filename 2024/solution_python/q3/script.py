@@ -5,13 +5,9 @@ def check_enabled_memory(corrupted_raw_memory: str) -> str:
     do_pattern = "do()"
     dont_pattern = "don't()"
 
-    raw_size = len(corrupted_raw_memory)
-
     sliced_s = "do()" + corrupted_raw_memory
 
     while len(sliced_s) > 0:
-
-        # print(f"Scanning memory: {len(sliced_s)} / {raw_size}")
 
         do_id_start = sliced_s.find(do_pattern)
         do_id_end = do_id_start + len(do_pattern)
