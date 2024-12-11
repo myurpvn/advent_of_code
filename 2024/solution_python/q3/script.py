@@ -68,7 +68,7 @@ def regex_find(s: str) -> list[tuple[str, str]]:
 
 
 raw_corrupt_memory = ""
-with open("input.txt", "r") as f:
+with open("q3/input.txt", "r") as f:
     raw_corrupt_memory = f.read()
 
 print(f"raw corrupted memory size: {len(raw_corrupt_memory)}")
